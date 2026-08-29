@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PNG Files</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        #files {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .file {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0002;
+            text-align: center;
+        }
+
+        .file img {
+            max-width: 100%;
+            max-height: 150px;
+            object-fit: contain;
+        }
+
+        .filename {
+            margin-top: 10px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>PNG Files</h1>
+
+<div id="files">
+    <div class="file">
+        <img src="files/logo.png" alt="logo.png">
+        <div class="filename">logo.png</div>
+        <a href="files/logo.png" download>Download</a>
+    </div>
+
+    <div class="file">
+        <img src="files/icon.png" alt="icon.png">
+        <div class="filename">icon.png</div>
+        <a href="files/icon.png" download>Download</a>
+    </div>
+</div>
+
+</body>
+</html>
